@@ -139,7 +139,7 @@ func getcp949() *charsetMap {
 				0x007D, //RIGHT CURLY BRACKET
 				0x007E, //TILDE
 				0x007F, //DELETE
-				0xFFFD, //UNDEFINED
+				0x0080, //UNDEFINED, AS SQL SERVER DECODES IT
 				-1,     //DBCS LEAD BYTE
 				-1,     //DBCS LEAD BYTE
 				-1,     //DBCS LEAD BYTE
@@ -266,7 +266,7 @@ func getcp949() *charsetMap {
 				-1,     //DBCS LEAD BYTE
 				-1,     //DBCS LEAD BYTE
 				-1,     //DBCS LEAD BYTE
-				0xFFFD, //UNDEFINED
+				0xF8F7, //UNDEFINED, AS SQL SERVER DECODES IT
 			},
 			db: map[int]rune{
 				0x8141: 0xAC02, //HANGUL SYLLABLE KIYEOK A SSANGKIYEOK

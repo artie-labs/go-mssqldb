@@ -139,7 +139,7 @@ func getcp950() *charsetMap {
 				0x007D, //RIGHT CURLY BRACKET
 				0x007E, //TILDE
 				0x007F, //DELETE
-				0xFFFD, //UNDEFINED
+				0x0080, //UNDEFINED, AS SQL SERVER DECODES IT
 				-1,     //DBCS LEAD BYTE
 				-1,     //DBCS LEAD BYTE
 				-1,     //DBCS LEAD BYTE
@@ -266,7 +266,7 @@ func getcp950() *charsetMap {
 				-1,     //DBCS LEAD BYTE
 				-1,     //DBCS LEAD BYTE
 				-1,     //DBCS LEAD BYTE
-				0xFFFD, //UNDEFINED
+				0xF8F8, //UNDEFINED, AS SQL SERVER DECODES IT
 			},
 			db: map[int]rune{
 				0xA140: 0x3000, //IDEOGRAPHIC SPACE
