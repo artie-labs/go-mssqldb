@@ -266,7 +266,7 @@ func getcp936() *charsetMap {
 				-1,     //DBCS LEAD BYTE
 				-1,     //DBCS LEAD BYTE
 				-1,     //DBCS LEAD BYTE
-				0xFFFD, //UNDEFINED
+				0xF8F5, //UNDEFINED, AS SQL SERVER DECODES IT
 			},
 			db: map[int]rune{
 				0x8140: 0x4E02, //CJK UNIFIED IDEOGRAPH
